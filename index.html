@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    
+    <title>To Do</title>
+</head>
+<body>
+    <div class = "sidebar">
+        <div class = "top">
+            <div class="logo">
+                <i class='bx bx-world'></i>
+                <span>YeehawDo</span>
+            </div>
+            <i class="bx bx-menu" id="btn"></i>
+        </div>
+        <div class = "user">
+            <img src="assets/user_img.png" alt="User Image" class="user-img">
+            <div>
+                <p class="bold">User Name</p>
+                <p>Admin</p>
+            </div>
+        </div>
+        <ul>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-briefcase-alt-2'></i>
+                    <span class="nav-item">Work</span>
+                </a>
+                <span class="tooltip">Work</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-home-alt-2'></i>
+                    <span class="nav-item">Home</span>
+                </a>
+                <span class="tooltip">Home</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-bus-school' ></i>
+                    <span class="nav-item">School</span>
+                </a>
+                <span class="tooltip">School</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-cat'></i>
+                    <span class="nav-item">Hobbies</span>
+                </a>
+                <span class="tooltip">Hobbies</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="container">
+            <div class="titlediv">
+                <h1 class="list-title">
+                    School List
+                </h1>
+            </div>
+        </div>
+        <div class="maincontainer">
+            <div class="todo-app" id="todo-list-container">
+                <div class="container1">
+                    <div class="todo-app">
+                        <div class="app-title">
+                            <h2>To-do</h2>
+                            <i class='bx bxs-book-bookmark' ></i>
+                        </div>
+                        <div class="row">
+                            <input type="text" id="input-box" placeholder="Add your tasks!">
+                            <button><i class='bx bx-plus' ></i></i></button>
+                        </div>
+                        <ul id="list-container">
+                        </ul>
+                    </div>
+                </div>
+             </div>
+        </div>
+        
+    </div>
+
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
